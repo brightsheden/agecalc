@@ -1,0 +1,12 @@
+{% extends 'age/base.html' %}
+
+{% block content %}
+    <form class="form-group ml-2" method="POST" action="age">
+    {% csrf_token %}
+<h2> KNOW YOUR AGE</h2>
+    Year<input type="text" placeholder="Enter Your Year Of Birth" name='odun'></br>
+    <button type="submit">Submit</button>
+    </form>
+{% endblock %}
+</body>
+</html>
